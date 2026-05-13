@@ -16,4 +16,9 @@ jobs:
         uses: chainguard-dev/actions/melange-build@main
         with:
           config: build.yaml
-          arch: x86_64
+          archs: x86_64
+
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v7
+        with:
+          path: /home/runner/work/os-build/os-build/packages/x86_64/*
