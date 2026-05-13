@@ -80,6 +80,7 @@ pipeline:
         "pnpm.overrides.uuid=>=13.0.1" \
         "pnpm.overrides.oci-common=^2.131.2" \
         "pnpm.overrides.oci-objectstorage=^2.131.2" \
+        "pnpm.overrides.hono=^4.11.10" \
         "pnpm.overrides.ajv=^8.18.0" \
         "pnpm.overrides.langsmith=^0.5.19" \
         "pnpm.overrides.@tootallnate/once =^3.0.1" \
@@ -199,7 +200,7 @@ subpackages:
         - ld-linux
         - libgcc
         - libstdc++
-        - nodejs-20
+        - nodejs-24
     pipeline:
       - name: "Build worker and bump deps"
         runs: |
@@ -211,7 +212,6 @@ subpackages:
             "pnpm.overrides.uuid=>=13.0.1" \
             "pnpm.overrides.oci-common=^2.131.2" \
             "pnpm.overrides.oci-objectstorage=^2.131.2" \
-            "pnpm.overrides.hono=^4.11.10" \
             "pnpm.overrides.ajv=^8.18.0" \
             "pnpm.overrides.basic-ftp=^5.2.0" \
             "devDependencies.webpack=^5.104.1" \
