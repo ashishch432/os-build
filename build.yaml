@@ -80,7 +80,6 @@ pipeline:
         "pnpm.overrides.oci-common=^2.131.2" \
         "pnpm.overrides.oci-objectstorage=^2.131.2" \
         "pnpm.overrides.ajv=^8.18.0" \
-        "pnpm.overrides.langsmith=^0.5.19" \
         "pnpm.overrides.@tootallnate/once=^3.0.1" \
         "pnpm.overrides.basic-ftp=^5.2.1" \
         "pnpm.overrides.hono=^4.12.18" \
