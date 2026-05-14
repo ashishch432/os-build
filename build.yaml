@@ -64,26 +64,26 @@ pipeline:
       corepack enable
       corepack prepare pnpm@latest --activate
 
-      pnpm pkg set \
-        "pnpm.overrides.path-to-regexp=^6.3.0" \
-        "pnpm.overrides.undici=^6.24.0" \
-        "pnpm.overrides.vite=^6.4.2" \
-        "pnpm.overrides.vitest=^2.1.9" \
-        "pnpm.overrides.brace-expansion=^5.0.5" \
-        "pnpm.overrides.nodemailer=^8.0.5" \
-        "pnpm.overrides.diff=^8.0.3" \
-        "pnpm.overrides.qs=^6.14.2" \
-        "pnpm.overrides.webpack=^5.104.1" \
-        "pnpm.overrides.fast-xml-parser=^5.7.0" \
-        "pnpm.overrides.postcss=^8.5.10" \
-        "pnpm.overrides.uuid=>=13.0.1" \
-        "pnpm.overrides.oci-common=^2.131.2" \
-        "pnpm.overrides.oci-objectstorage=^2.131.2" \
-        "pnpm.overrides.ajv=^8.18.0" \
-        "pnpm.overrides.@tootallnate/once=^3.0.1" \
-        "pnpm.overrides.basic-ftp=^5.2.1" \
-        "pnpm.overrides.hono=^4.12.18" \
-        "devDependencies.webpack=^5.104.1"
+      # pnpm pkg set \
+      #   "pnpm.overrides.path-to-regexp=^6.3.0" \
+      #   "pnpm.overrides.undici=^6.24.0" \
+      #   "pnpm.overrides.vite=^6.4.2" \
+      #   "pnpm.overrides.vitest=^2.1.9" \
+      #   "pnpm.overrides.brace-expansion=^5.0.5" \
+      #   "pnpm.overrides.nodemailer=^8.0.5" \
+      #   "pnpm.overrides.diff=^8.0.3" \
+      #   "pnpm.overrides.qs=^6.14.2" \
+      #   "pnpm.overrides.webpack=^5.104.1" \
+      #   "pnpm.overrides.fast-xml-parser=^5.7.0" \
+      #   "pnpm.overrides.postcss=^8.5.10" \
+      #   "pnpm.overrides.uuid=>=13.0.1" \
+      #   "pnpm.overrides.oci-common=^2.131.2" \
+      #   "pnpm.overrides.oci-objectstorage=^2.131.2" \
+      #   "pnpm.overrides.ajv=^8.18.0" \
+      #   "pnpm.overrides.@tootallnate/once=^3.0.1" \
+      #   "pnpm.overrides.basic-ftp=^5.2.1" \
+      #   "pnpm.overrides.hono=^4.12.18" \
+      #   "devDependencies.webpack=^5.104.1"
 
       pnpm install --ignore-scripts --no-frozen-lockfile
 
