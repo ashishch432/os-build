@@ -51,7 +51,7 @@ pipeline:
   - uses: git-checkout
     with:
       repository: https://github.com/langfuse/langfuse.git
-      tag: v${{package.version}}
+      #tag: v${{package.version}}
 
   - name: "Disable minimumReleaseAge"
     runs: |
